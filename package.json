@@ -12,7 +12,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+  "start": "kill -9 $(lsof -ti:3000,8000) && if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+  "start:prod": "node server.js",
+  "start:dev": "concurrently --kill-others \"npx nodemon --exec npx babel-node server.js \" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
   }
 }
