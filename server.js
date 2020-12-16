@@ -5,10 +5,10 @@ import path from 'path';
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
+
 const PORT = process.env.PORT || 8000;
 
 app.use(express.static('build'));
-
 
 app.get('/hello', (req, res) => res.send('Hi'))
 
