@@ -8,10 +8,6 @@ app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 8000;
 
-app.use(express.static('build'));
-
-app.get('/hello', (req, res) => res.send('Hi'))
-
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("build"));
 
@@ -20,5 +16,16 @@ if (process.env.NODE_ENV === "production") {
     });
 
 }
+
+app.use(express.static('build'));
+
+app.get('/hello', (req, res) => res.send('Hi'))
+
+app.get("/api/config", (req, res) => {
+    res.json({
+        success: true
+    });
+})
+
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
