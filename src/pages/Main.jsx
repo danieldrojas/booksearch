@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import WelcomePanel from '../components/WelcomePanel';
 
 class Main extends Component {
     render() {
@@ -6,8 +7,7 @@ class Main extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col s12">
-                        This is the main page
-
+                        <WelcomePanel />
                     </div>
                 </div>
             </div>
