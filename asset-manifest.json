@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/booksearch/static/js/main.ea4f6d43.chunk.js",
-    "main.js.map": "/booksearch/static/js/main.ea4f6d43.chunk.js.map",
+    "main.js": "/booksearch/static/js/main.bcad460b.chunk.js",
+    "main.js.map": "/booksearch/static/js/main.bcad460b.chunk.js.map",
     "runtime-main.js": "/booksearch/static/js/runtime-main.2b3de693.js",
     "runtime-main.js.map": "/booksearch/static/js/runtime-main.2b3de693.js.map",
     "static/js/2.0859186d.chunk.js": "/booksearch/static/js/2.0859186d.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.2b3de693.js",
     "static/js/2.0859186d.chunk.js",
-    "static/js/main.ea4f6d43.chunk.js"
+    "static/js/main.bcad460b.chunk.js"
   ]
 }
