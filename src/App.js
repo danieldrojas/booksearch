@@ -1,18 +1,19 @@
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar";
-import Main from "./pages/Main";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <div className="container">
-        <div className="row">
+      <Router>
+        <Navbar />
+        <div className="container">
+          <div className="row">
           <div className="col s12">
-            <Main />
+            <Route path="/" component={HomePage} exact />
+            </div>
           </div>
         </div>
-      </div>
-    </>
+      </Router>
   );
 }
 

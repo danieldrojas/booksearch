@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import WelcomePanel from '../components/WelcomePanel';
+import GoogleSearchForm from '../components/GoogleSearchForm';
 
-class Main extends Component {
+class HomePage extends Component {
     render() {
         return (
             <div className="container">
                 <div className="row">
                     <div className="col s12">
-                        <WelcomePanel />
+                        <GoogleSearchForm />
                     </div>
                 </div>
             </div>
@@ -15,4 +15,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default HomePage;
