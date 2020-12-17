@@ -1,2 +1,0 @@
-(this.webpackJsonpbooksearch=this.webpackJsonpbooksearch||[]).push([[0],{9:function(e,s,t){"use strict";t.r(s);var c=t(0),n=t(1),r=t.n(n),o=t(3);var i=function(){return Object(c.jsx)("div",{className:"App",children:"Hello this is App.js"})};t.n(o).a.render(Object(c.jsx)(r.a.StrictMode,{children:Object(c.jsx)(i,{})}),document.getElementById("root"))}},[[9,1,2]]]);
-//# sourceMappingURL=main.a8f9feeb.chunk.js.map
