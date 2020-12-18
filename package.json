@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "axios": "^0.21.0",
     "body-parser": "^1.19.0",
     "if-env": "^1.0.4",
     "mongoose": "^5.11.8",
@@ -19,7 +20,7 @@
   "scripts": {
     "start": "kill -9 $(lsof -ti:3000,8000) && if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently --kill-others \"npx nodemon --exec npx babel-node server.js \" \"react-scripts start\"",
+    "start:dev": "concurrently \"kill -9 $(lsof -ti:8000)\" \"npx nodemon --exec npx babel-node server.js \" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

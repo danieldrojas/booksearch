@@ -8,6 +8,7 @@ class HomePage extends Component {
                 <div className="row">
                     <div className="col s12">
                         <GoogleSearchForm />
+                        
                     </div>
                 </div>
             </div>
